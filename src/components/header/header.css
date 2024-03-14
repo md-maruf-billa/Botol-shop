@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    ;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-button {
+    display: flex;
+    gap: 30px;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.cart {
+    cursor: pointer;
+}
+
+.shop-logo {
+    font-style: italic;
+    font-size: 40px;
+}
+
+.page-nav a {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid rgb(255, 201, 24);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.page-nav a:hover {
+    background-color: blanchedalmond;
+    border: 1px solid rgb(255, 201, 24);
+
+}
+
+.active {
+    background-color: blanchedalmond;
+}
+
+header {
+    max-width: 1440px;
+    margin: 0 auto;
+}

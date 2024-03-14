@@ -1,0 +1,39 @@
+.product-card {
+    background-color: rgba(142, 141, 140, 0.26);
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cart-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.cart-icon {
+    color: red;
+}
+
+.cart-bar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    align-items: center;
+}
+
+.cart-bar img {
+    width: 20px;
+    height: 20px;
+}
