@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import {Product,AsideCard} from "../Product/Product";
 import './main.css'
-const Main = ({ cartClickHandle,clickCart }) => {
+const Main = ({ cartClickHandle,clickCart,productCard ,removeFromCart}) => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -23,7 +23,8 @@ const Main = ({ cartClickHandle,clickCart }) => {
                 }
 
             </section>
-            <section className="aside">
+
+            <section className={productCard?'dis-hidden':'aside'}>
                 <div className="title">
                     <h1 >Your Added</h1>
                 </div>
@@ -35,7 +36,7 @@ const Main = ({ cartClickHandle,clickCart }) => {
                     
                 </div>
                 {
-                   clickCart.map((pd,idx)=><AsideCard pd={pd} key={idx}></AsideCard>) 
+                   clickCart.map((pd,idx)=><AsideCard removeFromCart={removeFromCart} pd={pd} key={idx}></AsideCard>) 
                 }
             </section>
         </main>

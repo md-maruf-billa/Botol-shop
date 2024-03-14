@@ -1,6 +1,6 @@
 
 import './header.css'
-const Header = ({ clickCart }) => {
+const Header = ({ clickCart,showCartProduct }) => {
 
     return (
         <header>
@@ -14,7 +14,7 @@ const Header = ({ clickCart }) => {
                         <a href="">About</a>
                         <a href="">Contact use</a>
                     </div>
-                    <div className='cart'>
+                    <div className='cart' onClick={showCartProduct}>
                         <img src='../../../public/cart.png' /><sub>{clickCart.length}</sub>
 
                     </div>

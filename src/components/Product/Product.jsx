@@ -5,7 +5,7 @@ import { BsCart2 } from "react-icons/bs";
 
 
 
-const Product = ({ product, cartClickHandle }) => {
+const Product = ({ product, cartClickHandle}) => {
     const { name, seller, img, ratings, price } = product;
 
     const [cartColor, setCartColor] = useState(false)
@@ -34,12 +34,12 @@ const Product = ({ product, cartClickHandle }) => {
 };
 
 
-const AsideCard = ({pd})=>{
+const AsideCard = ({pd,removeFromCart})=>{
     return(
         <div className='cart-bar'>
             <h3>{pd.name}</h3>
             <h3>{pd.price}</h3>
-            <img src="../../../public/cross.png" alt="" />
+            <img onClick={()=>removeFromCart(pd)} src="../../../public/cross.png" alt="" />
         </div>
     )
 }

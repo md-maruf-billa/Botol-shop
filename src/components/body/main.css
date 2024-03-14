@@ -28,3 +28,7 @@ main {
 .aside {
     width: 300px;
 }
+
+.dis-hidden {
+    display: none;
+}
